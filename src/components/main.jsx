@@ -5,7 +5,7 @@ export const Resume = () => {
 
   return (
     <div className="root">
-      This is cool bro
+      TODO
     </div>
   )
 
