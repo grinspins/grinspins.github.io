@@ -10,6 +10,7 @@ const stylesHandler = 'style-loader';
 
 const config = {
     entry: './src/index.jsx',
+    devtool: 'inline-source-map',
     output: {
         path: path.resolve(__dirname, 'dist'),
     },
@@ -32,6 +33,13 @@ const config = {
             },
         ],
     },
+    devServer: {
+        host: '0.0.0.0',
+        port: 8000,
+        hot: true,
+        writeToDisk: true,
+        compress: true
+    }
 };
 
 module.exports = () => {
