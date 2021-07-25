@@ -1,0 +1,71 @@
+// $font: 15px;
+$font-small: 14px;
+$font-header: 18px;
+
+.root {
+    width: 210mm;
+    margin: auto;
+    padding: 10mm;
+}
+
+.light {
+    transition: all 0.5s ease;
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    transition: all 0.5s ease;
+    background-color: #333333;
+    color: white;
+
+    a {
+        color: skyblue;
+    }
+}
+
+.icon {
+    font-size: 15px;
+    opacity: 0.5;
+}
+
+.icon:hover {
+    opacity: 1;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-size: $font-small;
+}
+
+.contact-key {
+    float: left;
+    width: 50px;
+}
+
+.education-key {
+    float: left;
+    width: 125px;
+}
+
+.title {
+    margin: 16px;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+// .about {
+
+//     font-size: $font;
+
+// }
+
+.section-header {
+    font-size: $font-header;
+    border-bottom: black 1px solid;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    font-weight: bold;
+}
