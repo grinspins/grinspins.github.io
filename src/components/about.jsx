@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 export const About = ({ about }) => {
 
   return (
-    <div className="about">
+    <div>
       <div className="section-header">About</div>
       <div>{about}</div>
     </div>

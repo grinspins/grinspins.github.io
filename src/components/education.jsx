@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 export const Education = ({ education }) => {
 
   return (
-    <div className="about">
+    <div>
       <div className="section-header">Education</div>
       {(education).map(item => (
         <div key={item.key}>
