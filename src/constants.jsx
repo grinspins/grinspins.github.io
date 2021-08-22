@@ -59,11 +59,12 @@ export const LANGUAGES = [
     profficiency: 1
   }
 ]
+export const MAX_PROFFICIENCEY = 5
 export const TOOLS = [
   'git', 'Jira', 'Linux', 'Jenkins', 'MSSQL & pgSQL', 'Docker', 'Redis', 'React.js', 'Vue.js', 'GitLab CI/CD'
 ]
 
-export const AMYRIS = {
+const AMYRIS = {
   name: 'Amyris Inc.',
   location: 'Emeryville, Ca, USA',
   jobs: [
@@ -156,3 +157,5 @@ export const AMYRIS = {
     }
   ]
 }
+
+export const EXPERIENCES = [AMYRIS]
