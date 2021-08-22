@@ -5,7 +5,7 @@ import { Toolbar } from './toolbar'
 import { About } from './about'
 import { Education } from './education'
 import { ToolsLanguages } from './tools'
-import { Experience } from './experience/experience'
+import { Experiences } from './experience/experiences'
 import {
   ADDRESS,
   PHONE,
@@ -31,7 +31,7 @@ export const Resume = () => {
       <About about={ABOUT} />
       <Education education={EDUCATION} />
       <ToolsLanguages languages={LANGUAGES} tools={TOOLS} />
-      <Experience experiences={EXPERIENCES} />
+      <Experiences experiences={EXPERIENCES} />
     </div>
   )
 
