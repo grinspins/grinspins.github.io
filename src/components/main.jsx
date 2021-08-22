@@ -4,14 +4,18 @@ import { Title } from './title'
 import { Toolbar } from './toolbar'
 import { About } from './about'
 import { Education } from './education'
-
+import { ToolsLanguages } from './tools'
+import { Experience } from './experience/experience'
 import {
   ADDRESS,
   PHONE,
   EMAIL,
   NAME,
   ABOUT,
-  EDUCATION
+  EDUCATION,
+  LANGUAGES,
+  TOOLS,
+  EXPERIENCES
 } from '../constants'
 
 
@@ -26,6 +30,8 @@ export const Resume = () => {
       <Title name={NAME} />
       <About about={ABOUT} />
       <Education education={EDUCATION} />
+      <ToolsLanguages languages={LANGUAGES} tools={TOOLS} />
+      <Experience experiences={EXPERIENCES} />
     </div>
   )
 
