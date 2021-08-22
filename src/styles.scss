@@ -56,16 +56,31 @@ $font-header: 18px;
     text-decoration: underline;
 }
 
-// .about {
-
-//     font-size: $font;
-
-// }
-
 .section-header {
     font-size: $font-header;
     border-bottom: black 1px solid;
     margin-bottom: 6px;
     margin-top: 6px;
     font-weight: bold;
+}
+
+.pill-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-pill {
+    color: white;
+    padding: 4px 6px;
+    background-color: yellowgreen;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.tool-pill {
+    color: white;
+    padding: 4px 6px;
+    background-color: royalblue;
+    border-radius: 5px;
+    margin-top: 6px;
 }
