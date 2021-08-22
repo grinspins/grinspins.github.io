@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { SectionHeader } from './common/section_header'
 import {
   MAX_PROFFICIENCEY
 } from '../constants'
@@ -17,7 +18,7 @@ export const ToolsLanguages = ({ languages, tools }) => {
 
   return (
     <div>
-      <div className="section-header">Tools &amp; Languages</div>
+      <SectionHeader header="Tools &amp; Languages" />
       <div className="pill-container">
         {(languages).map(lang => (
           <div key={lang.name} className="lang-pill">

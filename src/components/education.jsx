@@ -1,11 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { SectionHeader } from './common/section_header'
 
 export const Education = ({ education }) => {
 
   return (
     <div>
-      <div className="section-header">Education</div>
+      <SectionHeader header="Education" />
       {(education).map(item => (
         <div key={item.key}>
           <span className="education-key">{item.key}</span>

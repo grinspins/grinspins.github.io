@@ -1,11 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { SectionHeader } from './common/section_header'
 
 export const About = ({ about }) => {
 
   return (
     <div>
-      <div className="section-header">About</div>
+      <SectionHeader header="About" />
       <div>{about}</div>
     </div>
   )
