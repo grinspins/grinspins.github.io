@@ -18,12 +18,12 @@ $font-header: 18px;
     }
 }
 
-.icon {
+.theme-icon {
     font-size: 20px;
     opacity: 0.75;
 }
 
-.icon:hover {
+.theme-icon:hover {
     opacity: 1;
 }
 
@@ -37,22 +37,22 @@ $font-header: 18px;
     transition: transform 0.7s linear;
 }
 
-.icon-show {
+.icon-light {
   position: absolute;
-    transform: rotate(0deg);
-    transition: transform 0.7s linear;
-    top: -10px;
-    left: 40px;  
+  transform: rotate(0deg);
+  transition: transform 0.7s linear;
+  top: -10px;
+  left: 40px;  
 
   // transform: translateX(10px) translateY(0);
 }
 
-.icon-hide {
+.icon-dark {
   position: absolute;
-    transform: rotate(0deg);
-    transition: transform 0.7s linear;
-    top: 90px;
-    left: 40px;
+  transform: rotate(0deg);
+  transition: transform 0.7s linear;
+  top: 90px;
+  left: 40px;
   // transform: translateX(10px) translateY(30px);
 }
 
