@@ -19,17 +19,17 @@ export const ToolsLanguages = ({ languages, tools }) => {
   return (
     <div>
       <SectionHeader header="Tools &amp; Languages" />
-      <div className="pill-container">
+      <div className="flex-space-between">
         {(languages).map(lang => (
-          <div key={lang.name} className="lang-pill">
+          <div key={lang.name} className="pill language-pill">
             {lang.name}&nbsp;
             {makeStars(lang.profficiency)}
           </div>
       ))}
       </div>
-      <div className="pill-container">
+      <div className="flex-space-between" style={{marginTop: "6px"}}>
         {(tools.map(tool => (
-          <span key={tool} className="tool-pill">{tool}</span>
+          <span key={tool} className="pill tool-pill">{tool}</span>
         )))}
       </div>
     </div>

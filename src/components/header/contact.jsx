@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 export const Contact = ({ phone, email }) => {
 
   return (
-    <div className='contact'>
+    <div>
       <ContactPhone phone={phone} />
       <ContactEmail email={email} />
     </div>
@@ -16,7 +16,7 @@ const ContactPhone = ({ phone }) => {
   
   return (
     <div>
-      <span className="contact-key">Phone:</span>
+      <span className="width-50">Phone:</span>
       {phone}
     </div>
   )
@@ -27,7 +27,7 @@ const ContactEmail = ({ email }) => {
 
   return (
     <div>
-      <span className="contact-key">E-Mail:</span>
+      <span className="width-50">E-Mail:</span>
       <a href={`mailto:${email}`}>{email}</a>
     </div>
   )

@@ -1,12 +1,6 @@
-// $font: 15px;
 $font-small: 14px;
 $font-header: 18px;
 
-.root {
-    width: 210mm;
-    margin: auto;
-    padding: 10mm;
-}
 
 .light {
     transition: all 0.5s ease;
@@ -25,72 +19,156 @@ $font-header: 18px;
 }
 
 .icon {
-    font-size: 15px;
-    opacity: 0.5;
+    font-size: 20px;
+    opacity: 0.75;
 }
 
 .icon:hover {
     opacity: 1;
 }
 
-.header {
+.rotor {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: transform 0.7s linear;
+}
+
+.icon-show {
+  position: absolute;
+    transform: rotate(0deg);
+    transition: transform 0.7s linear;
+    top: -10px;
+    left: 40px;  
+
+  // transform: translateX(10px) translateY(0);
+}
+
+.icon-hide {
+  position: absolute;
+    transform: rotate(0deg);
+    transition: transform 0.7s linear;
+    top: 90px;
+    left: 40px;
+  // transform: translateX(10px) translateY(30px);
+}
+
+// Consolidte flex and flex-space between?
+// .flex {
+//   display: flex;
+//   justify-content: center;
+// }
+
+.toolbar {
+  position: sticky;
+  bottom: 15px;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  // border: 1px solid black;
+  box-shadow: 2px 2px 8px 1px #888888;
+  z-index: 5;
+  background-color: white;
+}
+
+.paper {
+    width: 210mm;
+    margin: auto;
+    padding: 10mm;
+    height: 297mm;
+    border: 1px solid black;
+}
+
+// consolidate with flex-space-betwen and just set font
+.contact-container {
     display: flex;
     justify-content: space-between;
     font-size: $font-small;
 }
 
-.contact-key {
-    float: left;
-    width: 50px;
+.width-50 {
+  display: inline-block;
+  width: 50px;
 }
 
-.education-key {
-    float: left;
-    width: 125px;
-}
-
-.title {
-    margin: 16px;
-    font-size: 25px;
-    text-align: center;
-    text-decoration: underline;
+.width-125 {
+  display: inline-block;
+  width: 125px;
 }
 
 .section-header {
-    font-size: $font-header;
-    border-bottom: black 1px solid;
-    margin-bottom: 6px;
-    margin-top: 6px;
-    font-weight: bold;
+  font-size: $font-header;
+  border-bottom: black 1px solid;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  font-weight: bold;
 }
 
-.pill-container {
-    display: flex;
-    justify-content: space-between;
+.title {
+  margin: 16px;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: underline;
 }
 
-.lang-pill {
-    color: white;
-    padding: 4px 6px;
-    background-color: yellowgreen;
-    border-radius: 5px;
-    display: inline-block;
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pill {
+  color: white;
+  padding: 4px 6px;
+  background-color: yellowgreen;
+  border-radius: 5px;
+}
+
+.language-pill {
+  background-color: yellowgreen;
 }
 
 .tool-pill {
-    color: white;
-    padding: 4px 6px;
-    background-color: royalblue;
-    border-radius: 5px;
-    margin-top: 6px;
+  background-color: royalblue;
 }
 
-.experience-company {
-    // equal to pill-container. Just make flex-space-between class 
-    display: flex;
-    justify-content: space-between;
+.position {
+  margin-bottom: 6px;
 }
 
-.experience-date {
-    min-width: 150px;
+.tasks {
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.subtasks {
+  list-style-type: '- ';
+  padding-inline-start: 20px;
+}
+
+.superscript {
+  font-size: 7px;
+  vertical-align: super;
+}
+
+@media print {
+  .paper {
+    padding: 0;
+    border: none;
+  }
+
+  .pill {
+    color: black;
+    border: 1px solid black;
+  }
+
+  .language-pill {
+    background-color: white;
+  }
+
+  .tool-pill {
+    background-color: white;
+  }
 }

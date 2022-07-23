@@ -12,7 +12,6 @@
         margin: auto;
         padding: 10mm;
         height: 297mm;
-        /* Remove when done */
         border: 1px solid black;
     }
 
@@ -52,20 +51,19 @@
       justify-content: space-between;
     }
 
-    .language-pill {
+    .pill {
       color: white;
       padding: 4px 6px;
       background-color: yellowgreen;
       border-radius: 5px;
-      display: inline-block;
+    }
+
+    .language-pill {
+      background-color: yellowgreen;
     }
 
     .tool-pill {
-      color: white;
-      padding: 4px 6px;
       background-color: royalblue;
-      border-radius: 5px;
-      margin-top: 6px;
     }
 
     .position {
@@ -87,8 +85,29 @@
       vertical-align: super;
     }
 
+    @media print {
+      .paper {
+        padding: 0;
+        border: none;
+      }
+
+      .pill {
+        color: black;
+        border: 1px solid black;
+      }
+
+      .language-pill {
+        background-color: white;
+      }
+
+      .tool-pill {
+        background-color: white;
+      }
+    }
+
+
   </style>
-  <title>Sebastian Mainberger</title>
+  <title>Sebastian Mainberger Resume</title>
 </head>
 
 <body>
@@ -143,24 +162,24 @@
     <div>
       <div class="section-header">Tools & Languages</div>
       <div class="flex-space-between">
-        <div class="language-pill">Python ★★★★</div>
-        <div class="language-pill">JavaScript ★★★★</div>
-        <div class="language-pill">CSS ★★★☆</div>
-        <div class="language-pill">PHP ★★☆☆</div>
-        <div class="language-pill">C# ★★☆☆</div>
-        <div class="language-pill">C/C++ ★☆☆☆</div>
+        <div class="pill language-pill">Python ★★★★</div>
+        <div class="pill language-pill">JavaScript ★★★★</div>
+        <div class="pill language-pill">CSS ★★★☆</div>
+        <div class="pill language-pill">PHP ★★☆☆</div>
+        <div class="pill language-pill">C# ★★☆☆</div>
+        <div class="pill language-pill">C/C++ ★☆☆☆</div>
       </div>
-      <div class="flex-space-between">
-        <div class="tool-pill">git</div>
-        <div class="tool-pill">Jira</div>
-        <div class="tool-pill">Linux</div>
-        <div class="tool-pill">Jenkins</div>
-        <div class="tool-pill">MSSQL & pgSQL</div>
-        <div class="tool-pill">Docker</div>
-        <div class="tool-pill">Redis</div>
-        <div class="tool-pill">React.js</div>
-        <div class="tool-pill">Vue.js</div>
-        <div class="tool-pill">CI/CD</div>
+      <div class="flex-space-between" style="margin-top: 6px;">
+        <div class="pill tool-pill">git</div>
+        <div class="pill tool-pill">Jira</div>
+        <div class="pill tool-pill">Linux</div>
+        <div class="pill tool-pill">Jenkins</div>
+        <div class="pill tool-pill">MSSQL & pgSQL</div>
+        <div class="pill tool-pill">Docker</div>
+        <div class="pill tool-pill">Redis</div>
+        <div class="pill tool-pill">React.js</div>
+        <div class="pill tool-pill">Vue.js</div>
+        <div class="pill tool-pill">CI/CD</div>
       </div>
     </div>
     <div>
@@ -171,7 +190,7 @@
         </div>
         <div>
           <div class="flex-space-between">
-            <i>Senior Software Engineer, Full Time</i><i>Oct. 2021 – Present</i>
+            <i>Senior Software Engineer, Full-Time</i><i>Oct. 2021 – Present</i>
           </div>
           <div>
             <ul class="tasks">
@@ -186,18 +205,19 @@
         </div>
         <div>
           <div class="flex-space-between" style="margin-bottom: 6px;">
-            <i>Software Engineer II, Full Time</i><i>Oct. 2021</i>
+            <i>Software Engineer II, Full-Time</i><i>Oct. 2021</i>
           </div>
         </div>
         <div>
           <div class="flex-space-between">
-            <i>Software Engineer I, Full Time</i><i>Aug. 2020 – Sep. 2021</i>
+            <i>Software Engineer I, Full-Time</i><i>Aug. 2020 – Sep. 2021</i>
           </div>
           <div>
             <ul class="tasks">
               <li>Served as full-stack technical lead in maintaining and expanding the in-house, web-based LIMS for analytical chemistry groups.</li>
+              <li>Conceived various design patterns for RESTful API interfaces regarding controller invocation, validation, and exception handling.</li>
               <li>Created and contributed to in-house shared libraries and applications in > 25 repositories.</li>
-              <li>Wrote custom Chromeleon<span class="superscript">TM</span> 7 CDS addins in C# using the SDK.</li>
+              <li>Wrote custom Chromeleon™ 7 CDS addins in C# using the SDK.</li>
               <ul class="subtasks">
                 <li>Watchdog to monitor instrument status and send notifications if an instrument queue aborts.</li>
                 <li>Script to extract standard qualification data and evaluate comparability of two standard lots.</li>
@@ -210,7 +230,7 @@
         </div>
         <div>
           <div class="flex-space-between">
-            <i>Associate Software Engineer, Full Time</i><i>Nov. 2019 – Aug. 2020</i>
+            <i>Associate Software Engineer, Full-Time</i><i>Nov. 2019 – Aug. 2020</i>
           </div>
           <div>
             <ul class="tasks">            
@@ -221,11 +241,11 @@
         </div>
         <div>
           <div class="flex-space-between">
-            <i>Development Engineer I, Full Time</i><i>Oct. 2018 – Nov. 2019</i>
+            <i>Development Engineer I, Full-Time</i><i>Oct. 2018 – Nov. 2019</i>
           </div>
           <div>
             <ul class="tasks">            
-              <li>Operationalized constant pressure LC on the Vanquish UHPLC system using ChromeleonTM 7 CDS.</li>
+              <li>Operationalized constant pressure LC on the Vanquish UHPLC system using Chromeleon™ 7 CDS.</li>
               <li>Worked on operationalizing an ultra-high throughput GC-VUV system.</li>
               <ul class="subtasks">
                 <li>Integrated new components and operations into the existing automation platform.</li>
@@ -243,7 +263,7 @@
         </div>
         <div>
           <div class="flex-space-between">
-            <i>Associate Scientist II, Full Time</i><i>Jan. 2018 – Oct. 2018</i>
+            <i>Associate Scientist II, Full-Time</i><i>Jan. 2018 – Oct. 2018</i>
           </div>
           <div>
             <ul class="tasks">            

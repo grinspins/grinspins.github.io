@@ -9,7 +9,7 @@ export const Education = ({ education }) => {
       <SectionHeader header="Education" />
       {(education).map(item => (
         <div key={item.key}>
-          <span className="education-key">{item.key}</span>
+          <span className="width-125">{item.key}</span>
           {item.value}
         </div>
       ))}

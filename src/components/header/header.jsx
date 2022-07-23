@@ -6,7 +6,7 @@ import { Contact } from './contact'
 export const Header = ({ address, email, phone }) => {
 
   return (
-    <div className="header">  
+    <div className="contact-container">  
         <Address address={address} />
         <Contact phone={phone} email={email} />
     </div>

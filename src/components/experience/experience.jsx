@@ -2,32 +2,37 @@ import React, { useLayoutEffect } from 'react'
 import PropTypes from 'prop-types'
 
 export const Experience = ({ experience }) => {
-  console.log(experience)
   return (
     <div>
-      {/* maybe some padding to the sides */}
-      <div className="experience-company">
-        <span><b>{experience.name}</b></span>
-        <span className="experience-date"><b>{experience.location}</b></span>
+      <div className="flex-space-between">
+        <b>{experience.name}</b>
+        <b>{experience.location}</b>
       </div>
       {experience.jobs.map(job => (
-        // fix classnames!
         <div key={job.title}>
-          <div className="experience-company">
-            <span><i>{job.title}, {job.type}</i></span>
-            <div className="experience-date"><i>{job.dates}</i></div>
+          <div className="flex-space-between">
+            <i>{job.title}, {job.type}</i>
+            <i>{job.dates}</i>
           </div>
-          {job.tasks.map((task, idx) => (
-            <ul key={idx}>
-              <li>{task.description}</li>
-              {/* if subtasks.length */}
-              <ul>
-                {task.subtasks.map(st => (
-                  <li key={st}>{st}</li>
-                ))}
-              </ul>
+          <div>
+            <ul className="tasks">
+              {job.tasks.map((task, idx) => (
+                <React.Fragment key={idx}>
+                  <li>{task.description}</li>
+                  {
+                    task.subtasks.length
+                    ? <ul className="subtasks">
+                        {
+                          task.subtasks.map((st, idx) => (
+                            <li key={idx}>{st}</li>
+                          ))}
+                    </ul>
+                    : null
+                  }
+                  </React.Fragment>
+              ))}
             </ul>
-          ))}
+          </div>
         </div>
       ))}
     </div>
