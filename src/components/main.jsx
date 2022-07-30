@@ -24,14 +24,16 @@ export const Resume = () => {
   const [theme, setTheme] = useState('light')
 
   return (
-    <div>
-      <div className={`paper ${theme}`}>
-        <Header address={ADDRESS} phone={PHONE} email={EMAIL} />
-        <Title name={NAME} />
-        <About about={ABOUT} />
-        <Education education={EDUCATION} />
-        <ToolsLanguages languages={LANGUAGES} tools={TOOLS} />
-        <Experiences experiences={EXPERIENCES} />
+    <div className={`bg-${theme}`}>
+      <div className={`font-${theme}`}>
+        <div className="paper">
+          <Header address={ADDRESS} phone={PHONE} email={EMAIL} />
+          <Title name={NAME} />
+          <About about={ABOUT} />
+          <Education education={EDUCATION} />
+          <ToolsLanguages languages={LANGUAGES} tools={TOOLS} />
+          <Experiences experiences={EXPERIENCES} />
+        </div>
       </div>
       <Toolbar theme={theme} setTheme={setTheme} />
     </div>

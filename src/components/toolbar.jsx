@@ -25,7 +25,7 @@ export const Toolbar = ({ theme, setTheme }) => {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       toggleTheme();
     }
-  })
+  }, [])
 
   return (
     <div className='toolbar'>
