@@ -1,52 +1,48 @@
 // Generated using webpack-cli https://github.com/webpack/webpack-cli
 
-const path = require('path');
+const path = require("path");
 
-const isProduction = process.env.NODE_ENV == 'production';
+const isProduction = process.env.NODE_ENV == "production";
 
 const config = {
-    entry: './src/index.jsx',
-    devtool: 'inline-source-map',
-    output: {
-        path: path.resolve(__dirname, 'dist'),
-    },
-    resolve: {
-        extensions: ['.js', '.jsx']
-    },
-    module: {
-        rules: [
-            {
-                test: /\.(js|jsx)$/i,
-                loader: 'babel-loader',
-            },
-            {
-                test: /\.s[ac]ss$/i,
-                use: [
-                  "style-loader",
-                  "css-loader",
-                  "sass-loader",
-                ],
-              },
-            {
-                test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
-                type: 'asset',
-            },
-        ],
-    },
-    devServer: {
-        host: '0.0.0.0',
-        port: 8000,
-        hot: true,
-        writeToDisk: true,
-        compress: true
-    }
+  entry: "./src/index.jsx",
+  devtool: "inline-source-map",
+  output: {
+    path: path.resolve(__dirname, "dist"),
+  },
+  resolve: {
+    extensions: [".js", ".jsx"],
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/i,
+        loader: "babel-loader",
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
+        type: "asset",
+      },
+    ],
+  },
+  devServer: {
+    host: "0.0.0.0",
+    port: 8000,
+    hot: true,
+    writeToDisk: true,
+    compress: true,
+  },
 };
 
 module.exports = () => {
-    if (isProduction) {
-        config.mode = 'production';        
-    } else {
-        config.mode = 'development';
-    }
-    return config;
+  if (isProduction) {
+    config.mode = "production";
+  } else {
+    config.mode = "development";
+  }
+  return config;
 };

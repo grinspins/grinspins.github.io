@@ -1,18 +1,15 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { SectionHeader } from './common/section_header'
+import React from "react";
+import PropTypes from "prop-types";
+import { Collapse } from "./common/collapse";
 
 export const About = ({ about }) => {
-
   return (
-    <div>
-      <SectionHeader header="About" />
+    <Collapse header="About" collapsed={false}>
       <div>{about}</div>
-    </div>
-  )
-
-}
+    </Collapse>
+  );
+};
 
 About.propTypes = {
-  about: PropTypes.string
-}
+  about: PropTypes.string,
+};

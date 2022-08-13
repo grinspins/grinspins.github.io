@@ -36,6 +36,7 @@
     "eslint": "^7.30.0",
     "eslint-plugin-react": "^7.24.0",
     "npm": "^7.20.0",
+    "prettier": "2.7.1",
     "sass-loader": "^10.2.0",
     "styles-loader": "^3.0.0",
     "webpack": "^5.45.1",
