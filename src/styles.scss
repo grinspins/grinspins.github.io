@@ -1,25 +1,27 @@
-$font-small: 14px;
-$font-header: 18px;
+$font-small: 1rem;
+$font-header: 1.28rem;
 
 body {
   margin: 0;
 }
 
-// TODO transition: all 0.7s linear; variable
+a {
+  transition: color 0.7s linear;
+}
 
 .bg-light {
-    transition: all 0.7s linear;
-    background-color: white;
+  transition: all 0.7s linear;
+  background-color: white;
 }
 
 .font-light {
-    transition: all 0.7s linear;
-    color: black;
+  transition: all 0.7s linear;
+  color: black;
 }
 
 .bg-dark {
-    transition: all 0.7s linear;
-    background-color: #333333;
+  transition: all 0.7s linear;
+  background-color: #333333;
 }
 
 .font-dark {
@@ -27,141 +29,156 @@ body {
   color: white;
 
   a {
-      color: skyblue;
+    color: skyblue;
   }
 }
 
 .icon {
-    font-size: 20px;
-    opacity: 0.75;
+  font-size: 1.25rem;
+  opacity: 0.75;
 }
 
 .icon:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .rotor {
-    position: relative;
-    left: 5px;
-    top: 15px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    transform: rotate(0deg);
-    transition: transform 0.7s linear;
+  position: relative;
+  left: 0.3125rem;
+  top: 0.9375rem;
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  transform: rotate(0deg);
+  transition: transform 0.7s linear;
 }
 
 .icon-light {
   position: absolute;
   transform: rotate(0deg);
   transition: transform 0.7s linear;
-  top: -10px;
-  left: 15px;  
+  top: -0.625rem;
+  left: 0.9375rem;
 }
 
 .icon-dark {
   position: absolute;
   transform: rotate(180deg);
   transition: transform 0.7s linear;
-  top: 40px;
-  left: 15px;
+  top: 2.5rem;
+  left: 0.9375rem;
 }
 
 .icon-print {
   position: relative;
-  left: 75px;
-  top: -40px;
+  left: 4rem;
+  top: -2.5rem;
 }
 
-// Consolidte flex and flex-space between?
-// .flex {
-//   display: flex;
-//   justify-content: center;
-// }
+.icon-email {
+  position: relative;
+  left: 5rem;
+  top: -2.5rem;
+  color: black;
+}
 
 .toolbar {
   position: sticky;
-  bottom: 15px;
+  bottom: 0.9375rem;
   margin: auto;
-  width: 150px;
-  height: 40px;
-  box-shadow: 2px 2px 8px 1px #888888;
+  width: 8rem; //TODO
+  height: 2.5rem;
+  box-shadow: 0.125rem 0.125rem 0.5rem 0.0625rem #888888;
   z-index: 5;
   background-color: white;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
 }
 
 .collapsible {
-  // background-color: #777;
-  // color: white;
   cursor: pointer;
-  // padding: 18px;
-  // width: 100%;
-  // border: none;
-  // text-align: left;
-  // outline: none;
-  // font-size: 15px;
+  padding: 0.375rem 0.75rem;
+  border-top-left-radius: 0.3125rem;
+  border-top-right-radius: 0.3125rem;
+  transition: background-color 0.7s linear;
+}
+
+.bg-light .collapsible {
+  background-color: #666666;
+  color: white;
+}
+
+.bg-dark .collapsible {
+  background-color: #cccccc;
+  color: black;
 }
 
 .collapsible:after {
-  content: '\002B';
-  color: white;
+  content: "\25B7";
   font-weight: bold;
   float: right;
-  margin-left: 5px;
+  margin-left: 0.3125rem;
+  transform: rotate(0deg);
+  transition: transform 0.5s ease-out;
 }
 
-.active:after {
-  content: "\2212";
+.collapsible-open:after {
+  transform: rotate(90deg);
 }
 
-.content{
+.content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out,
+    background-color 0.7s linear;
+  padding: 0 0.375rem;
+  border-bottom-left-radius: 0.3125rem;
+  border-bottom-right-radius: 0.3125rem;
 }
 
-// TODO content and open
-.content, .open {
-  max-height: fit-content;
+.content-open {
+  padding: 0.375rem 0.375rem;
+}
+
+.bg-light .content {
+  background-color: #f2f2f2;
+}
+
+.bg-dark .content {
+  background-color: #404040;
 }
 
 .paper {
-    width: 210mm;
-    margin: auto;
-    padding: 10mm;
-    border: 1px solid black;
+  width: 50rem;
+  margin: auto;
+  padding: 1rem;
+  border: 0.0625rem solid black;
 }
 
-// consolidate with flex-space-betwen and just set font
 .contact-container {
-    display: flex;
-    justify-content: space-between;
-    font-size: $font-small;
+  font-size: $font-small;
 }
 
 .width-50 {
   display: inline-block;
-  width: 50px;
+  width: 3.3rem;
 }
 
 .width-125 {
   display: inline-block;
-  width: 125px;
+  width: 7.8125rem;
 }
 
 .section-header {
   font-size: $font-header;
-  border-bottom: black 1px solid;
-  margin-bottom: 6px;
-  margin-top: 6px;
+  border-bottom: black 0.0625rem solid;
+  margin-top: 0.375rem;
   font-weight: bold;
 }
 
 .title {
-  margin: 16px;
-  font-size: 25px;
+  margin: 1rem;
+  font-size: 1.8rem;
   text-align: center;
   text-decoration: underline;
 }
@@ -173,9 +190,9 @@ body {
 
 .pill {
   color: white;
-  padding: 4px 6px;
+  padding: 0.25rem 0.375rem;
   background-color: yellowgreen;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
 }
 
 .language-pill {
@@ -187,21 +204,21 @@ body {
 }
 
 .position {
-  margin-bottom: 6px;
+  margin-bottom: 0.375rem;
 }
 
 .tasks {
   margin: 0;
-  margin-bottom: 6px;
+  margin-bottom: 0.375rem;
 }
 
 .subtasks {
-  list-style-type: '- ';
-  padding-inline-start: 20px;
+  list-style-type: "- ";
+  padding-inline-start: 1.25rem;
 }
 
 .superscript {
-  font-size: 7px;
+  font-size: 0.5rem;
   vertical-align: super;
 }
 
@@ -213,7 +230,7 @@ body {
 
   .pill {
     color: black;
-    border: 1px solid black;
+    border: 0.0625rem solid black;
   }
 
   .language-pill {

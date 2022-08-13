@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
-import { Header } from './header/header'
-import { Title } from './title'
-import { Toolbar } from './toolbar'
-import { About } from './about'
-import { Education } from './education'
-import { ToolsLanguages } from './tools'
-import { Experiences } from './experience/experiences'
+import React, { useState } from "react";
+import { Header } from "./header/header";
+import { Title } from "./title";
+import { Toolbar } from "./toolbar";
+import { About } from "./about";
+import { Education } from "./education";
+import { ToolsLanguages } from "./tools";
+import { Experiences } from "./experience/experiences";
 import {
   ADDRESS,
   PHONE,
@@ -15,13 +15,12 @@ import {
   EDUCATION,
   LANGUAGES,
   TOOLS,
-  EXPERIENCES
-} from '../constants'
-
+  EXPERIENCES,
+  OTHER_EXPERIENCES,
+} from "../constants";
 
 export const Resume = () => {
-
-  const [theme, setTheme] = useState('light')
+  const [theme, setTheme] = useState("light");
 
   return (
     <div className={`bg-${theme}`}>
@@ -32,12 +31,19 @@ export const Resume = () => {
           <About about={ABOUT} />
           <Education education={EDUCATION} />
           <ToolsLanguages languages={LANGUAGES} tools={TOOLS} />
-          <Experiences experiences={EXPERIENCES} />
+          <Experiences
+            experiences={EXPERIENCES}
+            header={"Professional Experience"}
+            collapsed={false}
+          />
+          <Experiences
+            experiences={OTHER_EXPERIENCES}
+            header={"Other Experience"}
+            collapsed={true}
+          />
         </div>
       </div>
-      <Toolbar theme={theme} setTheme={setTheme} />
+      <Toolbar setTheme={setTheme} />
     </div>
-    
-  )
-
-}
+  );
+};
