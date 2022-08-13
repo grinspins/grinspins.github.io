@@ -37,5 +37,8 @@ export const Collapse = ({ header, collapsed, children }) => {
 Collapse.propTypes = {
   header: PropTypes.string.isRequired,
   collapsed: PropTypes.bool,
-  children: PropTypes.element,
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element),
+  ]),
 };
