@@ -38,6 +38,7 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v1
+      - run: mkdir -p build/cache
       - name: Restore cache
         uses: actions/cache@v3
         with:
@@ -54,7 +55,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: .
+          path: ./dist
 
   # Deployment job
   deploy:
