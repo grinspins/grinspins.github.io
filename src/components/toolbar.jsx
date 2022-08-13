@@ -50,6 +50,7 @@ export const Toolbar = ({ setTheme }) => {
         className="icon icon-print"
         icon={faPrint}
         onClick={() => printExternal("https://grinspins.github.io/resume.html")}
+        // onClick={() => printExternal("http://localhost:8000/resume.html")}
       />
       <a href="mailto:sebastian.mainberger@gmail.com">
         <FontAwesomeIcon className="icon icon-email" icon={faEnvelopeOpen} />

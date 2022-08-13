@@ -129,10 +129,10 @@ const AMYRIS = {
         {
           description: `Wrote custom Chromeleon™ 7 CDS addins in C# using the SDK.`,
           subtasks: [
-            `Watchdog to monitor instrument status and send notifications if an
-              instrument queue aborts.`,
-            `Script to extract standard qualification data and evaluate comparability of
-              two standard lots.`,
+            // `Watchdog to monitor instrument status and send notifications if an
+            //   instrument queue aborts.`,
+            // `Script to extract standard qualification data and evaluate comparability of
+            //   two standard lots.`,
           ],
         },
         {
@@ -412,8 +412,8 @@ const ODELZHAUSEN = {
 };
 
 const TENGELMANN = {
-  name: "Brauerei Odelzhausen Hans & Maria Eser GmbH & Co.KG",
-  location: "Odelzhausen, DE",
+  name: "Kaiser’s Tengelmann AG",
+  location: "Olching, DE",
   jobs: [
     {
       title: "Side Job as Store Clerk    ",
