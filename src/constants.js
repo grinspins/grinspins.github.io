@@ -270,8 +270,7 @@ const TUM = {
         {
           description: "Prepared the lab course “Process automation”.",
           subtasks: [
-            `Developed and tested a breadboard model including hard-
-              (actors, sensors, circuitry) and software (programming of PLCs).`,
+            `Developed and tested a breadboard model of a filling station including hard- and software.`,
             "Wrote a guide for students to follow in the course.",
           ],
         },
@@ -290,7 +289,7 @@ const ROCHE = {
       dates: "Oct. 2015 – Mar. 2016",
       tasks: [
         {
-          description: `PAided in the validation of a method for the identification and
+          description: `Aided in the validation of a method for the identification and
             quantification of extractables and leachables, occurring in the production of parenteral drugs, based on GC/MS.`,
           subtasks: [
             "Acquired and prepared samples for measurement and conducted the latter.",
@@ -385,8 +384,7 @@ const AMPERVERBAND = {
           subtasks: [
             `Set parameters for aerobic and anaerobic fermentation, high pressure thermal
             hydrolysis and drying processes under direct supervision.`,
-            `Took process samples and performed physical (e.g. TGA), chemical
-            (standardized photometric tests) and microbial (e.g. microscopy, oxygen uptake rate) analysis.`,
+            `Took process samples and performed physical, chemical and microbial analysis.`,
           ],
         },
       ],
