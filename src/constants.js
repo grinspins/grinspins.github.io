@@ -229,22 +229,210 @@ const AMYRIS = {
 
 export const EXPERIENCES = [AMYRIS];
 
+const TUM = {
+  name: "Chair of Process Systems Engineering, TUM",
+  location: "Freising, DE",
+  jobs: [
+    {
+      title: "Research Associate",
+      type: "Part-Time",
+      dates: "Aug. 2018 – Dec. 2018",
+      tasks: [
+        {
+          description: `Performed molecular dynamics simulations to predict diffusion
+            coefficients of MOSH and MOA components.`,
+          subtasks: [],
+        },
+      ],
+    },
+    {
+      title: "Master Thesis and Research Associate",
+      type: "Full-Time",
+      dates: "Apr. 2016 – Feb. 2017",
+      tasks: [
+        {
+          description: `Thesis: Experimental and Molecular Dynamic Studies of Deep
+            Eutectic Solvents.`,
+          subtasks: [
+            "Conducted molecular dynamics simulations.",
+            "Wrote Python and Bash scripts to automate data acquisition and accelerate analysis.",
+            "Performed differential scanning calorimetry experiments.",
+            "Published an article in an international, peer-reviewed journal.",
+          ],
+        },
+      ],
+    },
+    {
+      title: "Research Internship",
+      type: "Full-Time",
+      dates: "Apr. 2015",
+      tasks: [
+        {
+          description: "Prepared the lab course “Process automation”.",
+          subtasks: [
+            `Developed and tested a breadboard model including hard-
+              (actors, sensors, circuitry) and software (programming of PLCs).`,
+            "Wrote a guide for students to follow in the course.",
+          ],
+        },
+      ],
+    },
+  ],
+};
+
+const ROCHE = {
+  name: "Roche Diagnostics GmbH ",
+  location: "Mannheim, DE",
+  jobs: [
+    {
+      title: "Analytical Process Optimization Intern",
+      type: "Full-Time",
+      dates: "Oct. 2015 – Mar. 2016",
+      tasks: [
+        {
+          description: `PAided in the validation of a method for the identification and
+            quantification of extractables and leachables, occurring in the production of parenteral drugs, based on GC/MS.`,
+          subtasks: [
+            "Acquired and prepared samples for measurement and conducted the latter.",
+            "Analyzed acquired data and presented results in written form.",
+            "Built a model of a filling module in respect to plastic parts in contact with the product.",
+            "Cross-validated results with LC/MS and TOC data.",
+          ],
+        },
+        {
+          description: `Conducted experiments regarding the adhesion and exact point of
+            sealing of rubber stoppers for pre-filled syringes using the Methylene Blue Dye Test.`,
+          subtasks: [],
+        },
+      ],
+    },
+  ],
+};
+
+const TUM2 = {
+  name: "Chair of Brewing and Beverage Technology, TUM",
+  location: "Freising, DE",
+  jobs: [
+    {
+      title: "Research Internship",
+      type: "Full-Time",
+      dates: "Nov. 2014",
+      tasks: [
+        {
+          description:
+            "Aided in the development of temperature inducible genetic promoters.",
+          subtasks: [
+            "Prepared media for cell cultivation and samples for analysis.",
+            "Conducted photometric measurements.",
+            "Cultivated cells and maintained original strains.",
+            "Handled genetically modified organisms.",
+          ],
+        },
+      ],
+    },
+  ],
+};
+
+const NOWEDA = {
+  name: "Noweda e.G.",
+  location: "Bergkirchen, DE",
+  jobs: [
+    {
+      title: "Side Job in Warehousing",
+      type: "Full-Time",
+      dates: "Jul. 2014 – May. 2015",
+      tasks: [],
+    },
+  ],
+};
+
+const BACHELOR = {
+  name: "Chair of Urban Water Systems Engineering, TUM",
+  location: "Garching, DE",
+  jobs: [
+    {
+      title: "Bachelor Thesis",
+      type: "Full-Time",
+      dates: "Dec. 2013 – Apr. 2014",
+      tasks: [
+        {
+          description: `Thesis: Development of Mass Spectrometric Enzyme Assays for Various
+          Isoforms of Cytochrome P450.`,
+          subtasks: [
+            "Developed and prepared enzyme assays.",
+            "Monitored progression of assays in real time by means of mass-spectrometry.",
+            "Validated results with fluorescence- and UV/VIS-spectroscopic measurements.",
+            "Performed statistical analysis on the results.",
+          ],
+        },
+      ],
+    },
+  ],
+};
+
+const AMPERVERBAND = {
+  name: "Amperverband KöR",
+  location: "Olching, DE",
+  jobs: [
+    {
+      title: "Intern",
+      type: "Full-Time",
+      dates: "Jan. 2013 – Mar. 2013",
+      tasks: [
+        {
+          description:
+            "Monitored and validated a wastewater treatment process.",
+          subtasks: [
+            `Set parameters for aerobic and anaerobic fermentation, high pressure thermal
+            hydrolysis and drying processes under direct supervision.`,
+            `Took process samples and performed physical (e.g. TGA), chemical
+            (standardized photometric tests) and microbial (e.g. microscopy, oxygen uptake rate) analysis.`,
+          ],
+        },
+      ],
+    },
+  ],
+};
+
+const ODELZHAUSEN = {
+  name: "Brauerei Odelzhausen Hans & Maria Eser GmbH & Co.KG",
+  location: "Odelzhausen, DE",
+  jobs: [
+    {
+      title: "Intern",
+      type: "Full-Time",
+      dates: "May. 2010 – Jun. 2010",
+      tasks: [
+        {
+          description: `Aided in the quality insurance of resources and product, monitored 
+          the brewing process, performed and validated the cleaning and sanitation of equipment.`,
+          subtasks: [],
+        },
+      ],
+    },
+  ],
+};
+
+const TENGELMANN = {
+  name: "Brauerei Odelzhausen Hans & Maria Eser GmbH & Co.KG",
+  location: "Odelzhausen, DE",
+  jobs: [
+    {
+      title: "Side Job as Store Clerk    ",
+      type: "Full-Time",
+      dates: "Nov. 2008 – Mar. 2014",
+      tasks: [],
+    },
+  ],
+};
+
 export const OTHER_EXPERIENCES = [
-  {
-    name: "Roche Inc.",
-    location: "Mannheim, DE",
-    jobs: [
-      {
-        title: "Intern",
-        type: "Full-Time",
-        dates: "Oct. 2021 – Present",
-        tasks: [
-          {
-            description: "Do intern stuff",
-            subtasks: [],
-          },
-        ],
-      },
-    ],
-  },
+  TUM,
+  ROCHE,
+  TUM2,
+  NOWEDA,
+  BACHELOR,
+  AMPERVERBAND,
+  ODELZHAUSEN,
+  TENGELMANN,
 ];
