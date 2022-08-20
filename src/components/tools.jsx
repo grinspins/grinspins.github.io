@@ -21,7 +21,7 @@ export const ToolsLanguages = ({ languages, tools }) => {
         {languages.map((lang) => (
           <div key={lang.name} className="pill language-pill">
             {lang.name}&nbsp;
-            {makeStars(lang.profficiency)}
+            {makeStars(lang.proficiency)}
           </div>
         ))}
       </div>
@@ -40,7 +40,7 @@ ToolsLanguages.propTypes = {
   languages: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string,
-      profficiency: PropTypes.number,
+      proficiency: PropTypes.number,
     })
   ),
   tools: PropTypes.array,
