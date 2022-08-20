@@ -12,11 +12,11 @@ export const PHONE = "+49 1573 8131179";
 export const EMAIL = "sebastian.mainberger@gmail.com";
 
 export const ABOUT = `
-  Full-stack software engineer with experience in the life science industry.
-  Specialist in software support for analytical chemistry operations with
-  first-hand work experience in an operational lab. Proven ability to quickly
-  take ownership of new code bases and master new technologies in a self-reliant
-  fashion.
+  Full-stack software engineer with experience in the life science
+  industry. Specialist in software support for synthetic biology and analytics
+  platforms with first-hand work experience in an operational lab.
+  Proven ability to quickly take ownership of new code bases and master
+  new technologies in a self-reliant fashion.
 `;
 
 export const EDUCATION = [
@@ -42,27 +42,27 @@ export const EDUCATION = [
 export const LANGUAGES = [
   {
     name: "Python",
-    profficiency: 4,
+    proficiency: 4,
   },
   {
     name: "JavaScript",
-    profficiency: 4,
+    proficiency: 4,
   },
   {
     name: "CSS",
-    profficiency: 3,
+    proficiency: 3,
   },
   {
     name: "PHP",
-    profficiency: 2,
+    proficiency: 2,
   },
   {
     name: "C#",
-    profficiency: 2,
+    proficiency: 2,
   },
   {
     name: "C/C++",
-    profficiency: 1,
+    proficiency: 1,
   },
 ];
 export const MAX_PROFFICIENCEY = 4;
@@ -89,8 +89,8 @@ const AMYRIS = {
       dates: "Oct. 2021 – Present",
       tasks: [
         {
-          description: `Serve as Technical Product Manager for a process development
-            group.`,
+          description: `Serve as Technical Product Manager for a downstream process
+            development group.`,
           subtasks: [
             `Identify software requirements with stakeholders and align individual
               needs with overall strategy.`,
