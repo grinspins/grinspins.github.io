@@ -73,6 +73,7 @@ export const TOOLS = [
   "Jenkins",
   "MSSQL & pgSQL",
   "Docker",
+  "GCP",
   "Redis",
   "React.js",
   "Vue.js",
