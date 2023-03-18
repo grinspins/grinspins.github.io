@@ -90,13 +90,20 @@ const AMYRIS = {
       dates: "Oct. 2021 – Present",
       tasks: [
         {
-          description: `Serve as Technical Product Manager for a downstream process
+          description: `Technical Product Manager and Team Lead for the analytics platform.`,
+          subtasks: [
+            "Scope and satisfy the software requirements of a variety of analytical chemistry groups.",
+            "Curate, assign and communicate development tasks and ensure their timely and satisfactory completion.",
+            "Technical lead and software architect for multiple applications.",
+          ],
+        },
+        {
+          description: `Technical Product Manager for a downstream process
             development group.`,
           subtasks: [
             `Identify software requirements with stakeholders and align individual
               needs with overall strategy.`,
-            "Curate and communicate development tasks.",
-            "Serve as lead developer on development teams.",
+            "Lead developer on development teams."
           ],
         },
       ],
