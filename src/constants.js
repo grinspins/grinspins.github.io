@@ -13,8 +13,8 @@ export const EMAIL = "sebastian.mainberger@gmail.com";
 
 export const ABOUT = `
   Full-stack software engineer with experience in the life science
-  industry. Specialist in software support for synthetic biology and analytics
-  platforms with first-hand work experience in an operational lab.
+  industry. Specialist in software support for scientific and R&D
+  platforms, and laboratory operations. 
   Proven ability to quickly take ownership of new code bases and master
   new technologies in a self-reliant fashion.
 `;
